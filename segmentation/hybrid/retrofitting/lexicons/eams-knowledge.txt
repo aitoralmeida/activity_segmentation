@@ -1,0 +1,4 @@
+Fridge CupsCupboard
+PlatesCupboard Freezer Fridge PansCupboard GroceriesCupboard
+PlatesCupboard Fridge GroceriesCupboard Freezer
+ToiletFlush HallBathroomDoor HallToiletDoor
