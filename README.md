@@ -1,2 +1,3 @@
-# activity_segmentation
-Embedding-based real-time change point detection with application to activity segmentation in smart home time series data
+# Deep Learning for activity recognition, segmentation and behavior prediction
+
+This work was carried out with the financial support of FuturAAL-Ego (RTI2018-101045-A-C22) granted by Spanish Ministry of Science, Innovation and Universities.

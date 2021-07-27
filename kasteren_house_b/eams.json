@@ -1,0 +1,109 @@
+{"LeaveHouse": {
+    "locations": ["Hall"],
+    "actions": ["Frontdoor"],
+    "duration": 10800,
+    "start": [["00:00", "23:59"]]
+ },
+ "UseToilet": {
+     "locations": ["Bathroom"],
+     "actions": ["ToiletDoor", "ToiletFlush"],
+     "duration": 60,
+     "start": [["00:00", "23:59"]]
+ },
+ "TakeShower": {
+     "locations": ["Bathroom"],
+     "actions": ["ToiletDoor", "BathroomPIR"],
+     "duration": 600,
+     "start": [["10:00", "16:00"], ["18:00", "19:00"]]
+ },
+ "BrushTeeth": {
+     "locations": ["Bathroom", "Kitchen"],
+     "actions": ["KitchenPIR"],
+     "duration": 180,
+     "start": [["01:00", "03:30"], ["10:00", "12:00"], ["13:00", "16:00"], ["21:00", "23:59"]]
+ },
+ "Shaving": {
+     "locations": ["Kitchen"],
+     "actions": ["KitchenPIR"],
+     "duration": 540,
+     "start": [["18:30", "18:50"]]
+ },
+ "GoToBed": {
+     "locations": ["Bedroom"],
+     "actions": ["BedRight", "BedLeft", "BedroomPIR"],
+     "duration": 14400,
+     "start": [["23:00", "23:59"], ["00:00", "11:30"]]
+ },
+ "GetDressed": {
+     "locations": ["Bedroom"],
+     "actions": ["Dresser", "BedroomDoor"],
+     "duration": 240,
+     "start": [["10:00", "11:00"], ["12:30", "16:00"], ["18:00", "19:00"]]
+ },
+ "PrepareBrunch": {
+     "locations": ["Kitchen"],
+     "actions": ["Fridge", "StoveLid", "Toaster"],
+     "duration": 600,
+     "start": [["10:00", "13:00"]]
+ },
+ "PrepareDinner": {
+     "locations": ["Kitchen"],
+     "actions": ["CupboardGroceries", "Fridge", "CutlaryDrawer", "CupboardPlates"],
+     "duration": 1200,
+     "start": [["18:00", "22:30"]]
+ },
+ "GetDrink": {
+     "locations": ["Kitchen"],
+     "actions": ["Fridge", "StoveLid"],
+     "duration": 60,
+     "start": [["06:30", "07:00"], ["09:20", "09:40"], ["12:50", "13:00"], ["14:00", "15:00"], ["17:00", "18:00"], ["22:00", "23:00"]]
+ },
+ "WashDishes": {
+     "locations": ["Kitchen"],
+     "actions": ["Sink"],
+     "duration": 240,
+     "start": [["12:00", "13:00"], ["18:00", "19:00"], ["21:00", "22:00"]]
+ },
+ "AnsweringPhone": {
+     "locations": ["Kitchen", "Office", "Bedroom"],
+     "actions": ["KitchenPIR", "BedroomPIR"],
+     "duration": 120,
+     "start": [["12:00", "12:05"], ["20:00", "20:10"]]
+ },
+ "EatDinner": {
+     "locations": ["Office"],
+     "actions": ["Piano"],
+     "duration": 120,
+     "start": [["20:45", "21:00"]]
+ },
+ "EatBrunch": {
+     "locations": ["Kitchen"],
+     "actions": ["Bridge"],
+     "duration": 60,
+     "start": [["09:50", "09:55"], ["10:20", "10:25"], ["12:50", "12:55"]]
+ },
+ "SettingUpSensors": {
+     "locations": ["Kitchen"],
+     "actions": ["Window"],
+     "duration": 60,
+     "start": [["16:10", "16:45"]]
+ },
+ "Unpacking": {
+     "locations": ["Bedroom"],
+     "actions": ["BedroomPIR"],
+     "duration": 60,
+     "start": [["18:30", "19:10"]]
+ },
+ "InstallSensor": {
+     "locations": ["All"],
+     "actions": ["Couch"],
+     "duration": 60,
+     "start": [["0:00", "23:59"]]
+ },
+ "PlayPiano": {
+     "locations": ["Office"],
+     "actions": ["Piano"],
+     "duration": 60,
+     "start": [["00:00", "23:59"]]
+ }
+}

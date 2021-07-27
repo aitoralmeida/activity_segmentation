@@ -1,0 +1,259 @@
+{"activities": {
+    "TakeShower": {
+	"locations": ["Bathroom"],
+	"actions": ["HallToiletDoor"],
+	"duration": 600,
+	"start": [["8:30", "11:30"], ["12:00", "13:00"], ["14:00", "15:00"]]
+    },
+    "GetDrink": {
+	"locations": ["Kitchen"],
+	"actions": ["Fridge", "CupsCupboard"],
+	"duration": 50,
+	"start": [["8:00", "9:00"], ["17:00", "18:00"], ["20:00", "23:00"]]
+    },
+    "PrepareDinner": {
+	"locations": ["Kitchen"],
+	"actions": ["PlatesCupboard", "Freezer", "Fridge", "PansCupboard", "GroceriesCupboard"],
+	"duration": 300,
+	"start": [["18:00", "23:30"]]
+    },
+    "GoToBed": {
+	"locations": ["Bedroom"],
+	"actions": ["HallBedroomDoor"],
+	"duration": 10,
+	"start": [["00:00", "10:30"], ["22:00", "23:59"]]
+    },
+    "PrepareBreakfast": {
+	"locations": ["Kitchen"],
+	"actions": ["PlatesCupboard", "Fridge", "GroceriesCupboard", "Freezer"],
+	"duration": 240,
+	"start": [["8:00", "10:30"]]
+    },
+    "LeaveHouse": {
+	"locations": ["Hall"],
+	"actions": ["Frontdoor"],
+	"duration": 10800,
+	"start": [["00:00", "23:59"]]
+    },
+    "UseToilet": {
+	"locations": ["Bedroom", "Lounge"],
+	"actions": ["ToiletFlush", "HallBathroomDoor"],
+	"duration": 60,
+	"start": [["00:00", "23:59"]]
+    }
+},
+ "objects": {
+     "Microwave": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Microwave"]
+     },
+     "BathroomDoor": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["BathroomDoor"]
+     },
+     "CupboardCups": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["CupboardCups"]
+     },
+     "Fridge": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Fridge"]
+     },
+     "PlatesCupboard": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["PlatesCupboard"]
+     },
+     "Frontdoor": {
+	 "type": ["Other"],
+	 "location": "Hall",
+	 "sensors": ["Frontdoor"]
+     },
+     "ToiletFlushUpstairs": {
+	 "type": ["Hygiene"],
+	 "location": "BathroomUpstairs",
+	 "sensors": ["ToiletFlushUpstairs"]
+     },
+     "ToiletFlushDownstairs": {
+	 "type": ["Hygiene"],
+	 "location": "BathroomDownstairs",
+	 "sensors": ["ToiletFlushDownstairs"]
+     },
+     "Freezer": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Freezer"]
+     },
+     "Saucepan": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Saucepan"]
+     },
+     "BedroomDoor": {
+	 "type": ["Resting"],
+	 "location": "Bedroom",
+	 "sensors": ["BedroomDoor"]
+     },
+     "BedRight": {
+	 "type": ["Resting"],
+	 "location": "Bedroom",
+	 "sensors": ["BedRight"]
+     },
+     "Couch": {
+	 "type": ["Resting"],
+	 "location": "LivingRoom",
+	 "sensors": ["Couch"]
+     },
+     "Cutlery": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Kitchen"]
+     },
+     "GarbageBin": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["GarbageBin"]
+     },
+     "ToiletDoorDownstairs": {
+	 "type": ["Hygiene"],
+	 "location": "BathroomDownstairs",
+	 "sensors": ["ToiletDoorDownstairs"]
+     },
+     "Bathtub": {
+	 "type": ["Hygiene"],
+	 "location": "BathroomUpstairs",
+	 "sensors": ["Bathtub"]
+     },
+     "Dresser": {
+	 "type": ["Other"],
+	 "location": "Bedroom",
+	 "sensors": ["Dresser"]
+     },
+     "SinkTop": {
+	 "type": ["Hygiene"],
+	 "location": "BathroomUpstairs",
+	 "sensors": ["SinkTop"]
+     },
+     "BedLeft": {
+	 "type": ["Resting"],
+	 "location": "Bedroom",
+	 "sensors": ["BedLeft"]
+     },
+     "Keys": {
+	 "type": ["Other"],
+	 "location": "Kitchen",
+	 "sensors": ["Keys"]
+     }
+ },
+ "sensors": {
+     "Microwave": {
+	 "type": "contact",
+	 "action": "Microwave",
+	 "attached-to": "Microwave"
+     },
+     "BathroomDoor": {
+	 "type": "contact",
+	 "action": "BathroomDoor",
+	 "attached-to": "BathroomDoor"
+     },
+     "CupboardCups": {
+	 "type": "contact",
+	 "action": "CupboardCups",
+	 "attached-to": "CupboardCups"
+     },
+     "Fridge": {
+	 "type": "contact",
+	 "action": "Fridge",
+	 "attached-to": "Fridge"
+     },
+     "PlatesCupboard": {
+	 "type": "contact",
+	 "action": "PlatesCupboard",
+	 "attached-to": "PlatesCupboard"
+     },
+     "Frontdoor": {
+	 "type": "contact",
+	 "action": "Frontdoor",
+	 "attached-to": "Frontdoor"
+     },
+     "ToiletFlushUpstairs": {
+	 "type": "contact",
+	 "action": "ToiletFlushUpstairs",
+	 "attached-to": "ToiletFlushUpstairs"
+     },
+     "ToiletFlushDownstairs": {
+	 "type": "contact",
+	 "action": "ToiletFlushDownstairs",
+	 "attached-to": "ToiletFlushDownstairs"
+     },
+     "Freezer": {
+	 "type": "contact",
+	 "action": "Freezer",
+	 "attached-to": "Freezer"
+     },
+     "Saucepan": {
+	 "type": "contact",
+	 "action": "Saucepan",
+	 "attached-to": "Saucepan"
+     },
+     "BedroomDoor": {
+	 "type": "contact",
+	 "action": "BedroomDoor",
+	 "attached-to": "BedroomDoor"
+     },
+     "BedRight": {
+	 "type": "contact",
+	 "action": "BedRight",
+	 "attached-to": "BedRight"
+     },
+     "Couch": {
+	 "type": "contact",
+	 "action": "Couch",
+	 "attached-to": "Couch"
+     },
+     "Cutlery": {
+	 "type": "contact",
+	 "action": "Cutlery",
+	 "attached-to": "Cutlery"
+     },
+     "GarbageBin": {
+	 "type": "contact",
+	 "action": "GarbageBin",
+	 "attached-to": "GarbageBin"
+     },
+     "ToiletDoorDownstairs": {
+	 "type": "contact",
+	 "action": "ToiletDoorDownstairs",
+	 "attached-to": "ToiletDoorDownstairs"
+     },
+     "Bathtub": {
+	 "type": "contact",
+	 "action": "Bathtub",
+	 "attached-to": "Bathtub"
+     },
+     "Dresser": {
+	 "type": "contact",
+	 "action": "Dresser",
+	 "attached-to": "Dresser"
+     },
+     "SinkTop": {
+	 "type": "contact",
+	 "action": "SinkTop",
+	 "attached-to": "SinkTop"
+     },
+     "BedLeft": {
+	 "type": "contact",
+	 "action": "BedLeft",
+	 "attached-to": "BedLeft"
+     },
+     "Keys": {
+	 "type": "contact",
+	 "action": "BedLeft",
+	 "attached-to": "BedLeft"
+     }
+ }
+}

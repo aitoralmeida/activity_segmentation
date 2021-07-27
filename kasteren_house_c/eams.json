@@ -1,0 +1,97 @@
+{"LeaveHouse": {
+    "locations": ["Hall"],
+    "actions": ["Frontdoor"],
+    "duration": 10800,
+    "start": [["00:00", "23:59"]]
+ },
+ "Eating": {
+     "locations": ["Kitchen", "LivingRoom"],
+     "actions": ["Cutlery", "PlatesCupboard", "Couch"],
+     "duration": 700,
+     "start": [["7:00", "8:00"], ["10:00", "12:00"], ["13:00", "14:30"], ["17:30", "18:30"], ["22:00", "23:59"]]
+ },
+ "UseToiletDownstairs": {
+     "locations": ["BathroomDownstairs"],
+     "actions": ["ToiletDoorDownstairs", "ToiletFlushDownstairs"],
+     "duration": 120,
+     "start": [["8:00", "9:00"], ["11:00", "14:00"], ["17:00", "20:00"], ["22:00", "23:59"]]
+ },
+ "TakeShower": {
+     "locations": ["BathroomUpstairs"],
+     "actions": ["BathroomDoor", "Bathtub"],
+     "duration": 600,
+     "start": [["7:00", "10:00"], ["12:30", "13:30"], ["15:30", "16:30"], ["18:00", "19:00"], ["22:00", "23:59"]]
+ },
+ "GetDrink": {
+     "locations": ["Kitchen"],
+     "actions": ["Fridge", "CupboardCups"],
+     "duration": 50,
+     "start": [["00:00", "1:00"], ["10:30", "11:30"], ["14:00", "15:00"], ["23:00", "23:59"]]
+ },
+ "PrepareDinner": {
+     "locations": ["Kitchen"],
+     "actions": ["PlatesCupboard", "Freezer", "Fridge", "Saucepan", "Cutlery"],
+     "duration": 300,
+     "start": [["17:00", "20:30"]]
+ },
+ "PrepareLunch": {
+     "locations": ["Kitchen"],
+     "actions": ["PlatesCupboard", "Fridge", "Cutlery"],
+     "duration": 420,
+     "start": [["13:00", "14:30"]]
+ },
+ "GoToBed": {
+     "locations": ["Bedroom"],
+     "actions": ["BedRight"],
+     "duration": 18000,
+     "start": [["00:00", "10:00"], ["23:30", "23:59"]]
+ },
+ "PrepareBreakfast": {
+     "locations": ["Kitchen"],
+     "actions": ["PlatesCupboard", "Fridge", "Cutlery", "Freezer", "CupboardCups"],
+     "duration": 300,
+     "start": [["6:30", "11:00"]]
+ },
+ "UseToiletUpstairs": {
+     "locations": ["BathroomUpstairs"],
+     "actions": ["ToiletFlushUpstairs", "BathroomDoor", "Bathtub"],
+     "duration": 60,
+     "start": [["00:00", "23:59"]]
+ },
+ "BrushTeeth": {
+     "locations": ["BathroomUpstairs"],
+     "actions": ["SinkTop", "Bathtub"],
+     "duration": 240,
+     "start": [["00:00", "1:30"], ["22:00", "23:59"], ["6:00", "10:00"], ["17:00", "19:00"]]
+ },
+ "Shave": {
+     "locations": ["BathroomUpstairs"],
+     "actions": ["SinkTop", "BathroomDoor"],
+     "duration": 360,
+     "start": [["00:00", "00:30"], ["17:00", "19:00"]]
+ },
+ "GetDressed": {
+     "locations": ["Bedroom"],
+     "actions": ["Dresser", "BedLeft"],
+     "duration": 120,
+     "start": [["7:00", "11:30"], ["13:00", "13:30"], ["16:30", "18:30"]]
+ },
+ "TakeMedication": {
+     "locations": ["BathroomUpstairs"],
+     "actions": ["BathroomDoor", "SinkTop"],
+     "duration": 60,
+     "start": [["0:00", "1:00"], ["18:20", "18:30"]]
+ },
+ "GetSnack": {
+     "locations": ["Kitchen"],
+     "actions": ["Fridge", "Cutlery", "PlatesCupboard"],
+     "duration": 60,
+     "start": [["0:00", "1:00"], ["22:00", "23:59"]]
+ },
+ "Relax": {
+     "locations": ["LivingRoom"],
+     "actions": ["Couch"],
+     "duration": 60,
+     "start": [["0:00", "23:59"]]
+ }
+}

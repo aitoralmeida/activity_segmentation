@@ -1,0 +1,189 @@
+{"activities": {
+    "TakeShower": {
+	"locations": ["Bathroom"],
+	"actions": ["HallToiletDoor"],
+	"duration": 600,
+	"start": [["8:30", "11:30"], ["12:00", "13:00"], ["14:00", "15:00"]]
+    },
+    "GetDrink": {
+	"locations": ["Kitchen"],
+	"actions": ["Fridge", "CupsCupboard"],
+	"duration": 50,
+	"start": [["8:00", "9:00"], ["17:00", "18:00"], ["20:00", "23:00"]]
+    },
+    "PrepareDinner": {
+	"locations": ["Kitchen"],
+	"actions": ["PlatesCupboard", "Freezer", "Fridge", "PansCupboard", "GroceriesCupboard"],
+	"duration": 300,
+	"start": [["18:00", "23:30"]]
+    },
+    "GoToBed": {
+	"locations": ["Bedroom"],
+	"actions": ["HallBedroomDoor"],
+	"duration": 10,
+	"start": [["00:00", "10:30"], ["22:00", "23:59"]]
+    },
+    "PrepareBreakfast": {
+	"locations": ["Kitchen"],
+	"actions": ["PlatesCupboard", "Fridge", "GroceriesCupboard", "Freezer"],
+	"duration": 240,
+	"start": [["8:00", "10:30"]]
+    },
+    "LeaveHouse": {
+	"locations": ["Hall"],
+	"actions": ["Frontdoor"],
+	"duration": 10800,
+	"start": [["00:00", "23:59"]]
+    },
+    "UseToilet": {
+	"locations": ["Bedroom", "Lounge"],
+	"actions": ["ToiletFlush", "HallBathroomDoor"],
+	"duration": 60,
+	"start": [["00:00", "23:59"]]
+    }
+},
+"objects": {
+     "Microwave": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Microwave"]
+     },
+     "HallToiletDoor": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["HallToiletDoor"]
+     },
+     "HallBathroomDoor": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["HallBathroomDoor"]
+     },
+     "CupsCupboard": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["CupsCupboard"]
+     },
+     "Fridge": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Fridge"]
+     },
+     "PlatesCupboard": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["PlatesCupboard"]
+     },
+     "Frontdoor": {
+	 "type": ["Other"],
+	 "location": "Hall",
+	 "sensors": ["Frontdoor"]
+     },
+     "Dishwasher": {
+	 "type": ["Hygiene"],
+	 "location": "Kitchen",
+	 "sensors": ["Dishwasher"]
+     },
+     "ToiletFlush": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["ToiletFlush"]
+     },
+     "Freezer": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Freezer"]
+     },
+     "PansCupboard": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["PansCupboard"]
+     },
+     "Washingmachine": {
+	 "type": ["Hygiene"],
+	 "location": "Kitchen",
+	 "sensors": ["Washingmachine"]
+     },
+     "GroceriesCupboard": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["GroceriesCupboard"]
+     },
+     "HallBedroomDoor": {
+	 "type": ["Resting"],
+	 "location": "Bedroom",
+	 "sensors": ["HallBedroomDoor"]
+     }
+ },
+ "sensors": {
+     "Microwave": {
+	 "type": "contact",
+	 "action": "Microwave",
+	 "attached-to": "Microwave"
+     },
+     "HallToiletDoor": {
+	 "type": "contact",
+	 "action": "HallToiletDoor",
+	 "attached-to": "HallToiletDoor"
+     },
+     "HallBathroomDoor": {
+	 "type": "contact",
+	 "action": "HallBathroomDoor",
+	 "attached-to": "HallBathroomDoor"
+     },
+     "CupsCupboard": {
+	 "type": "contact",
+	 "action": "CupsCupboard",
+	 "attached-to": "CupsCupboard"
+     },
+     "Fridge": {
+	 "type": "contact",
+	 "action": "Fridge",
+	 "attached-to": "Fridge"
+     },
+     "PlatesCupboard": {
+	 "type": "contact",
+	 "action": "PlatesCupboard",
+	 "attached-to": "PlatesCupboard"
+     },
+     "Frontdoor": {
+	 "type": "contact",
+	 "action": "Frontdoor",
+	 "attached-to": "Frontdoor"
+     },
+     "Dishwasher": {
+	 "type": "contact",
+	 "action": "Dishwasher",
+	 "attached-to": "Dishwasher"
+     },
+     "ToiletFlush": {
+	 "type": "contact",
+	 "action": "ToiletFlush",
+	 "attached-to": "ToiletFlush"
+     },
+     "Freezer": {
+	 "type": "contact",
+	 "action": "Freezer",
+	 "attached-to": "Freezer"
+     },
+     "PansCupboard": {
+	 "type": "contact",
+	 "action": "PansCupboard",
+	 "attached-to": "PansCupboard"
+     },
+     "Washingmachine": {
+	 "type": "contact",
+	 "action": "Washingmachine",
+	 "attached-to": "Washingmachine"
+     },
+     "GroceriesCupboard": {
+	 "type": "contact",
+	 "action": "GroceriesCupboard",
+	 "attached-to": "GroceriesCupboard"
+     },
+     "HallBedroomDoor": {
+	 "type": "contact",
+	 "action": "HallBedroomDoor",
+	 "attached-to": "HallBedroomDoor"
+     }
+ }
+}

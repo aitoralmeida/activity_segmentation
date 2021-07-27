@@ -1,0 +1,299 @@
+{"activities": {
+    "TakeShower": {
+	"locations": ["Bathroom"],
+	"actions": ["HallToiletDoor"],
+	"duration": 600,
+	"start": [["8:30", "11:30"], ["12:00", "13:00"], ["14:00", "15:00"]]
+    },
+    "GetDrink": {
+	"locations": ["Kitchen"],
+	"actions": ["Fridge", "CupsCupboard"],
+	"duration": 50,
+	"start": [["8:00", "9:00"], ["17:00", "18:00"], ["20:00", "23:00"]]
+    },
+    "PrepareDinner": {
+	"locations": ["Kitchen"],
+	"actions": ["PlatesCupboard", "Freezer", "Fridge", "PansCupboard", "GroceriesCupboard"],
+	"duration": 300,
+	"start": [["18:00", "23:30"]]
+    },
+    "GoToBed": {
+	"locations": ["Bedroom"],
+	"actions": ["HallBedroomDoor"],
+	"duration": 10,
+	"start": [["00:00", "10:30"], ["22:00", "23:59"]]
+    },
+    "PrepareBreakfast": {
+	"locations": ["Kitchen"],
+	"actions": ["PlatesCupboard", "Fridge", "GroceriesCupboard", "Freezer"],
+	"duration": 240,
+	"start": [["8:00", "10:30"]]
+    },
+    "LeaveHouse": {
+	"locations": ["Hall"],
+	"actions": ["Frontdoor"],
+	"duration": 10800,
+	"start": [["00:00", "23:59"]]
+    },
+    "UseToilet": {
+	"locations": ["Bedroom", "Lounge"],
+	"actions": ["ToiletFlush", "HallBathroomDoor"],
+	"duration": 60,
+	"start": [["00:00", "23:59"]]
+    }
+},
+ "objects": {
+     "Frontdoor": {
+	 "type": ["Other"],
+	 "location": "Hall",
+	 "sensors": ["Frontdoor"]
+     },
+     "ToiletDoor": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["ToiletDoor"]
+     },
+     "ToiletFlush": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["ToiletFlush"]
+     },
+     "Toaster": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Toaster"]
+     },
+     "Fridge": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Fridge"]
+     },
+     "CupboardGroceries": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["CupboardGroceries"]
+     },
+     "CupboardPlates": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["CupboardPlates"]
+     },
+     "BedroomDoor": {
+	 "type": ["Other"],
+	 "location": "Bedroom",
+	 "sensors": ["BedroomDoor"]
+     },
+     "TempGeiser": {
+	 "type": ["Other"],
+	 "location": "Kitchen",
+	 "sensors": ["TempGeiser"]
+     },
+     "BedRight": {
+	 "type": ["Other"],
+	 "location": "Bedroom",
+	 "sensors": ["BedRight"]
+     },
+     "BedLeft": {
+	 "type": ["Other"],
+	 "location": "Bedroom",
+	 "sensors": ["BedLeft"]
+     },
+     "CutlaryDrawer": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["CutlaryDrawer"]
+     },
+     "StoveLid": {
+	 "type": ["Other"],
+	 "location": "Kitchen",
+	 "sensors": ["StoveLid"]
+     },
+     "BedroomPIR": {
+	 "type": ["Other"],
+	 "location": "Bedroom",
+	 "sensors": ["BedroomPIR"]
+     },
+     "TempShower": {
+	 "type": ["Hygiene"],
+	 "location": "Bathroom",
+	 "sensors": ["TempShower"]
+     },
+     "Dresser": {
+	 "type": ["Other"],
+	 "location": "Bedroom",
+	 "sensors": ["Dresser"]
+     },
+     "BathroomPIR": {
+	 "type": ["Other"],
+	 "location": "Bathroom",
+	 "sensors": ["BathroomPIR"]
+     },
+     "Piano": {
+	 "type": ["Other"],
+	 "location": "Office",
+	 "sensors": ["Piano"]
+     },
+     "Sink": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Sink"]
+     },
+     "Chair": {
+	 "type": ["Other"],
+	 "location": "Office",
+	 "sensors": ["Chair"]
+     },
+     "BalconyDoor": {
+	 "type": ["Other"],
+	 "location": "Balcony",
+	 "sensors": ["BalconyDoor"]
+     },
+     "Window": {
+	 "type": ["Other"],
+	 "location": "Kitchen",
+	 "sensors": ["Window"]
+     },
+     "Toaster": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Toaster"]
+     },
+     "Microwave": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["Microwave"]
+     },
+     "KitchenPIR": {
+	 "type": ["Cooking"],
+	 "location": "Kitchen",
+	 "sensors": ["KitchenPIR"]
+     }
+ },
+ "sensors": {
+     "Frontdoor": {
+	 "type": "Hygiene",
+	 "action": "Frontdoor",
+	 "attached-to": "Frontdoor"
+     },
+     "ToiletDoor": {
+	 "type": "Hygiene",
+	 "action": "ToiletDoor",
+	 "attached-to": "ToiletDoor"
+     },
+     "ToiletFlush": {
+	 "type": "Hygiene",
+	 "action": "ToiletFlush",
+	 "attached-to": "ToiletFlush"
+     },
+     "Toaster": {
+	 "type": "Cooking",
+	 "action": "Toaster",
+	 "attached-to": "Toaster"
+     },
+     "Fridge": {
+	 "type": "Cooking",
+	 "action": "Fridge",
+	 "attached-to": "Fridge"
+     },
+     "CupboardGroceries": {
+	 "type": "Cooking",
+	 "action": "CupboardGroceries",
+	 "attached-to": "CupboardGroceries"
+     },
+     "CupboardPlates": {
+	 "type": "Cooking",
+	 "action": "CupboardPlates",
+	 "attached-to": "CupboardPlates"
+     },
+     "BedroomDoor": {
+	 "type": "Other",
+	 "action": "BedroomDoor",
+	 "attached-to": "BedroomDoor"
+     },
+     "TempGeiser": {
+	 "type": "Other",
+	 "action": "TempGeiser",
+	 "attached-to": "TempGeiser"
+     },
+     "BedRight": {
+	 "type": "Other",
+	 "action": "BedRight",
+	 "attached-to": "BedRight"
+     },
+     "BedLeft": {
+	 "type": "Other",
+	 "action": "BedLeft",
+	 "attached-to": "BedLeft"
+     },
+     "CutlaryDrawer": {
+	 "type": "Cooking",
+	 "action": "CutlaryDrawer",
+	 "attached-to": "CutlaryDrawer"
+     },
+     "StoveLid": {
+	 "type": "Other",
+	 "action": "StoveLid",
+	 "attached-to": "StoveLid"
+     },
+     "BedroomPIR": {
+	 "type": "Other",
+	 "action": "BedroomPIR",
+	 "attached-to": "BedroomPIR"
+     },
+     "TempShower": {
+	 "type": "Hygiene",
+	 "action": "TempShower",
+	 "attached-to": "TempShower"
+     },
+     "Dresser": {
+	 "type": "Other",
+	 "action": "Dresser",
+	 "attached-to": "Dresser"
+     },
+     "BathroomPIR": {
+	 "type": "Other",
+	 "action": "BathroomPIR",
+	 "attached-to": "BathroomPIR"
+     },
+     "Piano": {
+	 "type": "Other",
+	 "action": "Piano",
+	 "attached-to": "Piano"
+     },
+     "Sink": {
+	 "type": "Cooking",
+	 "action": "Sink",
+	 "attached-to": "Sink"
+     },
+     "Chair": {
+	 "type": "Other",
+	 "action": "Chair",
+	 "attached-to": "Chair"
+     },
+     "BalconyDoor": {
+	 "type": "Other",
+	 "action": "BalconyDoor",
+	 "attached-to": "BalconyDoor"
+     },
+     "Window": {
+	 "type": "Other",
+	 "action": "Window",
+	 "attached-to": "Window"
+     },
+     "Toaster": {
+	 "type": "Cooking",
+	 "action": "Toaster",
+	 "attached-to": "Toaster"
+     },
+     "Microwave": {
+	 "type": "Cooking",
+	 "action": "Microwave",
+	 "attached-to": "Microwave"
+     },
+     "KitchenPIR": {
+	 "type": "Cooking",
+	 "action": "KitchenPIR",
+	 "attached-to": "KitchenPIR"
+     }     
+ }
+}

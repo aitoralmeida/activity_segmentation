@@ -1,0 +1,43 @@
+{"TakeShower": {
+    "locations": ["Bathroom"],
+    "actions": ["HallToiletDoor"],
+    "duration": 600,
+    "start": [["8:30", "11:30"], ["12:00", "13:00"], ["14:00", "15:00"]]
+},
+ "GetDrink": {
+     "locations": ["Kitchen"],
+     "actions": ["Fridge", "CupsCupboard"],
+     "duration": 50,
+     "start": [["8:00", "9:00"], ["17:00", "18:00"], ["20:00", "23:00"]]
+ },
+ "PrepareDinner": {
+     "locations": ["Kitchen"],
+     "actions": ["PlatesCupboard", "Freezer", "Fridge", "PansCupboard", "GroceriesCupboard"],
+     "duration": 300,
+     "start": [["18:00", "23:30"]]
+ },
+ "GoToBed": {
+     "locations": ["Bedroom"],
+     "actions": ["HallBedroomDoor"],
+     "duration": 10,
+     "start": [["00:00", "10:30"], ["22:00", "23:59"]]
+ },
+ "PrepareBreakfast": {
+     "locations": ["Kitchen"],
+     "actions": ["PlatesCupboard", "Fridge", "GroceriesCupboard", "Freezer"],
+     "duration": 240,
+     "start": [["8:00", "10:30"]]
+ },
+ "LeaveHouse": {
+     "locations": ["Hall"],
+     "actions": ["Frontdoor"],
+     "duration": 10800,
+     "start": [["00:00", "23:59"]]
+ },
+ "UseToilet": {
+     "locations": ["Bathroom"],
+     "actions": ["ToiletFlush", "HallBathroomDoor", "HallToiletDoor"],
+     "duration": 60,
+     "start": [["00:00", "23:59"]]
+ }
+}
